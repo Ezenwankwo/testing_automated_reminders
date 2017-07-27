@@ -10,12 +10,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # Allow all hosts, so we can run on PaaS's like Heroku
 ALLOWED_HOSTS = ['*']
 
-# Configure the production database using dj_database_url
+# Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config()
-}
-
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 # Address of RedisToGo instance
 BROKER_URL = os.environ.get('REDISTOGO_URL')

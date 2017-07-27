@@ -1,0 +1,1 @@
+web: gunicorn patientappointment.wsgi --log-file -
