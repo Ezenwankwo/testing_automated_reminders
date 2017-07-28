@@ -13,7 +13,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'not-so-secret'
@@ -30,7 +30,7 @@ BROKER_POOL_LIMIT = 8
 # Reminder time: how early text messages are sent in advance of appointments
 REMINDER_TIME = 30 # minutes
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -120,3 +120,6 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR + '/staticfiles'
 
 STATIC_URL = '/static/'
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
