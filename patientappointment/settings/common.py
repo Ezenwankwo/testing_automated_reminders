@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'not-so-secret'
+SECRET_KEY = 'nx7e9w_nq@qbr&jec$5vgm^$z$dl2f*&i(k(e*w4^r9i3lyci6'
 
 # Most important settings
 
@@ -121,5 +121,4 @@ STATIC_ROOT = BASE_DIR + '/staticfiles'
 
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
