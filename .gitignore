@@ -65,3 +65,8 @@ docs/_build/
 # PyBuilder
 target/
 
+# Text backup files
+*.bak
+
+#Database
+*.sqlite3
