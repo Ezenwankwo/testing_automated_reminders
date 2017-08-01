@@ -92,10 +92,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'patientappointment',
-        'USER': 'exalted',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'POST': '',
     }
 }
 
