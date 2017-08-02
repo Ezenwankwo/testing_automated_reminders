@@ -10,7 +10,8 @@ from .common import *
 ALLOWED_HOSTS = ['*']
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Address of RedisToGo instance
