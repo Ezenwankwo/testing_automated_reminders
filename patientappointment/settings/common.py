@@ -20,7 +20,7 @@ SECRET_KEY = 'nx7e9w_nq@qbr&jec$5vgm^$z$dl2f*&i(k(e*w4^r9i3lyci6'
 
 # Most important settings
 
-Twilio API
+#Twilio API
 TWILIO_NUMBER = os.environ.get('TWILIO_NUMBER')
 
 
