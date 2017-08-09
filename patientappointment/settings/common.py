@@ -20,11 +20,8 @@ SECRET_KEY = 'nx7e9w_nq@qbr&jec$5vgm^$z$dl2f*&i(k(e*w4^r9i3lyci6'
 
 # Most important settings
 
-# Twilio API
-#TWILIO_NUMBER = os.environ.get('TWILIO_NUMBER')
-TWILIO_NUMBER='+14438430186'
-TWILIO_ACCOUNT_SID='AC1c51f5486df438fca2adf23b83af3a38'
-TWILIO_AUTH_TOKEN='43f137d041f061de85badee7358fcc2b'
+Twilio API
+TWILIO_NUMBER = os.environ.get('TWILIO_NUMBER')
 
 
 # Address of Redis instance, our Celery broker

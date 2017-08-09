@@ -2,7 +2,7 @@
 
 {% load bootstrap_tags %}
 
-{% block title %}New reminder{% endblock title %}
+{% block title %}New reminder{% endblock title %} 
 
 {% block content %}
   <div class="row">
@@ -17,7 +17,7 @@
           </h1>
       </div>
 
-      <form class="form-horizontal" method="post">
+      <form class="form-horizontal" action="{% url 'new_appointment' %}" method="POST">
         {% csrf_token %}
         {{ form|as_bootstrap_horizontal }}
         <div class="form-group">
