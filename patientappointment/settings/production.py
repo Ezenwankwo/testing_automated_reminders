@@ -15,4 +15,4 @@ ALLOWED_HOSTS = ['*']
 
 
 # Address of RedisToGo instance
-BROKER_URL = os.environ.get('REDISTOGO_URL')
+BROKER_URL = 'redis://redistogo:c036eb72be7ea981f638be44d0d72302@angelfish.redistogo.com:11496/'
